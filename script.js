@@ -21,8 +21,8 @@ function typeWriterEffect(element, text, speed, callback) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-	typeWriterEffect(document.querySelector(".name"), "Aritra Chattopadhyay", 100, function() {
-		typeWriterEffect(document.querySelector(".intro"), "An Indian-based self-taught Frontend Developer who specializes in building exceptional digital experiences.", 50);
+	typeWriterEffect(document.querySelector(".name"), "Aritra Chattopadhyay", 100, function () {
+		typeWriterEffect(document.querySelector(".intro"), "An India-based self-taught Full-Stack Developer specializing in crafting exceptional digital experiences with a focus on performance and user-centric design.", 50);
 	});
 });
 
