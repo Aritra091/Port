@@ -332,6 +332,27 @@ small {
 	color: var(--secondary-clr);
 }
 
+.hero {
+	min-height: 100vh;
+}
+
+.image-container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Prevent it from being too large */
+    overflow: hidden;
+	margin-left: auto; /* Hide overflow (cropping effect) */
+}
+
+.image-container img {
+    width: 110%; /* Slightly enlarge the image */
+    height: 110%;
+    display: block;
+    object-fit: cover;
+	border-radius: 20px;
+    /* Shift to center after enlargement */
+}
+
+
 .profile {
     display: inline-block; /* Ensures correct behavior */
     position: relative;
@@ -816,6 +837,13 @@ small {
     align-items: center; /* Centers icon horizontally */
     justify-content: center;
 }
+
+.icon img {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
 
 /* Title in Each Card */
 h3 {
