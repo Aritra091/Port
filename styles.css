@@ -899,12 +899,20 @@ small {
 	align-items: flex-end;
 }
 
+/* Experience section */
 .experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex; /* Changed from grid to flex */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
     gap: 20px;
-    justify-content: center;
     padding: 0 20px;
+}
+
+.experience-grid > div {
+    /* Set a consistent size for all divs */
+    width: minmax(280px, 1fr); /* This will be ignored by flexbox, so let's set a fixed width or a flex-basis */
+    flex-basis: 280px; /* This sets the base width for each item */
+    flex-grow: 1; /* Allows items to grow to fill space */
 }
 
 /* Experience Card Styling */
